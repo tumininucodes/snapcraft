@@ -1,6 +1,6 @@
 import type { CanvasSettings, Annotation, PresetTemplate, SavedDesign } from './types';
 
-// Predefined beautiful gradients
+// ─── Preset Gradients ───────────────────────────────────────────────────────
 export const PRESET_GRADIENTS = [
   { name: 'Sunset Glow', value: 'linear-gradient(135deg, #f97316 0%, #ec4899 100%)' },
   { name: 'Ocean Breeze', value: 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%)' },
@@ -14,7 +14,7 @@ export const PRESET_GRADIENTS = [
   { name: 'Steel Tech', value: 'linear-gradient(135deg, #374151 0%, #111827 100%)' }
 ];
 
-// Predefined solids
+// ─── Preset Solids ──────────────────────────────────────────────────────────
 export const PRESET_SOLIDS = [
   { name: 'Midnight Slate', value: '#0f172a' },
   { name: 'Dark Charcoal', value: '#18181b' },
@@ -26,7 +26,7 @@ export const PRESET_SOLIDS = [
   { name: 'Pure White', value: '#ffffff' }
 ];
 
-// Predefined templates matching premium designs from Xnapper and Screenshots.so
+// ─── Preset Templates ───────────────────────────────────────────────────────
 export const PRESET_TEMPLATES: PresetTemplate[] = [
   {
     id: 'mac-neon',
@@ -34,7 +34,7 @@ export const PRESET_TEMPLATES: PresetTemplate[] = [
     description: 'Sleek macOS window centered on a high-contrast magenta and purple gradient.',
     settings: {
       bgType: 'gradient',
-      bgGradientIndex: 4, // Neon Glass
+      bgGradientIndex: 4, // index 4 → Neon Glass
       bgGradient: PRESET_GRADIENTS[4].value,
       frameStyle: 'macOS-dark',
       padding: 64,
@@ -55,7 +55,7 @@ export const PRESET_TEMPLATES: PresetTemplate[] = [
     description: 'Beautiful isometric 3D tilt with a dark tech theme.',
     settings: {
       bgType: 'gradient',
-      bgGradientIndex: 5, // Deep Space
+      bgGradientIndex: 5, // index 5 → Deep Space
       bgGradient: PRESET_GRADIENTS[5].value,
       frameStyle: 'macOS-dark',
       padding: 80,
@@ -63,7 +63,7 @@ export const PRESET_TEMPLATES: PresetTemplate[] = [
       borderRadius: 20,
       shadowDepth: 'double',
       borderWidth: 2,
-      borderColor: '#38bdf8', // Cyan border
+      borderColor: '#38bdf8',
       borderOpacity: 35,
       tiltX: 12,
       tiltY: -15,
@@ -77,7 +77,7 @@ export const PRESET_TEMPLATES: PresetTemplate[] = [
     description: 'Light-mode browser frame with a high-saturation orange sunset gradient.',
     settings: {
       bgType: 'gradient',
-      bgGradientIndex: 0, // Sunset Glow
+      bgGradientIndex: 0, // index 0 → Sunset Glow
       bgGradient: PRESET_GRADIENTS[0].value,
       frameStyle: 'browser-light',
       padding: 48,
@@ -117,7 +117,7 @@ export const PRESET_TEMPLATES: PresetTemplate[] = [
     description: 'Windows terminal mockup set in a dark carbon gradient.',
     settings: {
       bgType: 'gradient',
-      bgGradientIndex: 9, // Steel Tech
+      bgGradientIndex: 9, // index 9 → Steel Tech
       bgGradient: PRESET_GRADIENTS[9].value,
       frameStyle: 'windows-dark',
       padding: 56,
